@@ -1,0 +1,4 @@
+[16-Apr-2020 01:51:20 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function alert() in /home/hxm9103/public_html/ibra/registration_confirmation.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/hxm9103/public_html/ibra/registration_confirmation.php on line 5

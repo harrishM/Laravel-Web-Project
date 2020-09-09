@@ -1,0 +1,599 @@
+
+
+
+html {
+    height: 100%;
+}
+
+
+@font-face{
+    font-family: 'mountain';
+    src: url('./beyond_the_mountains/beyond_the_mountains.ttf')
+}
+
+.mobile-container {
+    display: none;
+}
+
+
+.wrapper{
+    background-color: black;
+    font-family: Open Sans;
+    background-size: cover;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.667;
+    background-repeat: no-repeat;
+    background-position: top;
+    width: 100%;
+    overflow-x: hidden;
+    }
+
+.container1 {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    height: 250px;
+    align-content: center; 
+    align-items: center;  
+    text-align: center;
+    justify-content: center;
+    font-family: Open Sans;
+}
+
+
+
+.container2 {
+    height: 90vh; 
+    margin-top: 20px;
+    align-content: center; 
+    align-items: center;  
+    text-align: center;
+    justify-content: center;    
+}
+
+.container3 {
+    height: 55vh;
+    margin-top: 300px;
+    align-content: center; 
+    align-items: center;  
+    text-align: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container4 {
+    height: 20vh;
+    margin-top: 300px;
+    align-content: center; 
+    align-items: center;  
+    text-align: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.form-radio{
+    width:5px !important;
+    height:5px!important;
+    }
+
+
+
+.bimage {
+    height: 40px;
+    width: 40px;
+    font-family: Open Sans;
+}
+
+.bimage1 {
+    height: 60px;
+    width: 80px;
+    font-family: Open Sans;
+    font-size: 15px
+    border 1px solid black; 
+    padding: 10px;
+}
+
+
+
+.items {
+    height: 100px;
+    width: 90px;
+    padding: 24px 15px;
+}
+
+td {
+    padding: 5px 30px;
+}
+
+header img {
+    height: 80px;
+    width: 80px;
+}
+
+nav {
+    height: 120px;
+    background-color: rgba(10, 10, 10, 0.384);
+    text-align: center;
+}
+
+h1 {
+    font-size: 60px;
+    font-family: 'mountain';  
+    color: black;
+    text-align: center;
+    margin-top: 2px;
+}
+
+h2 {
+    font-size: 40px;
+    font-family: 'mountain';  
+    color: black;
+    
+}
+h3{
+    font-size: 20px;
+    font-family: 'mountain';  
+    color: black;
+    text-align: center
+}
+
+p {
+    text-align: center;
+    font-family: Open Sans;
+    color: black;
+    margin-top: 0px;
+}
+
+a {
+    color: white;
+    padding-left: 10px;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+.active {
+    color: red;
+    font-weight: 600;
+}
+
+#alignment {
+    width: 100%;
+    height: 400px;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.button {
+  background-color: #EF0031;
+  color: #fff;
+  text-align: center;
+  padding: 1%;
+  font-size: 10px;
+  cursor: pointer;
+  font-family: Open Sans;
+  border: none;
+  font-weight: 600;
+  justify-content: center;
+}
+
+.buttongreen {
+    background-color:#37B143;
+    color: #fff;
+    text-align: center;
+    padding: 1%;
+    font-size: 10px;
+    cursor: pointer;
+    font-family: Open Sans;
+    border: none;
+    font-weight: 600;
+  }
+
+.buttonitems {
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border-radius: 0px;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+    font-family: Open Sans;
+    color: red;
+    border-style: solid;
+    border: 1px solid red;
+
+}
+
+.button:hover {
+    background-color: rgb(117, 29, 29);
+  }
+  
+  footer img {
+    height: 120px;
+    width: 120px;
+}
+
+
+
+.buttonCenter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+img.one{
+    height: 25px;
+    width: 25px;
+}
+
+.adjust_margin{
+    margin-left: 10%;
+
+}
+
+
+
+/* Position the Popup form */
+.login-popup {
+position: relative;
+text-align: center;
+width: 100%;
+}
+/* Hide the Popup form */
+.form-popup {
+display: none;
+position: fixed;
+left: 45%;
+top:2%;
+transform: translate(-45%,5%);
+border: 2px solid #666;
+z-index: 9;
+background-color: white;
+overflow: scroll;
+bottom: 0;
+top: 0;
+height: 90vh;
+}
+
+.form-popup1 {
+    display: none;
+    position: fixed;
+    left: 45%;
+    top:2%;
+    transform: translate(-45%,5%);
+    border: 2px solid #666;
+    z-index: 9;
+    background-color: white;
+    }
+/* Styles for the form container */
+.form-container {
+max-width: 300px;
+padding: 20px 60px 0px 10px;
+background-color: #fff;
+}
+/* Full-width for input fields */
+.form-container input[type=text], .form-container input[type=password] {
+width: 95%;
+padding: 15px;
+margin: 5px 0 22px 0;
+border: none;
+background: #eee;
+}
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+background-color: #ddd;
+outline: none;
+} 
+/* Style submit/login button */
+.form-container .btn {
+background-color: #8ebf42;
+color: #fff;
+padding: 12px 20px;
+border: none;
+cursor: pointer;
+width: 100%;
+margin-bottom:10px;
+opacity: 0.8;
+}
+/* Style cancel button */
+.form-container .cancel {
+background-color: #f80606dc;
+justify-content: right;
+padding: 12px 20px;
+border: none;
+cursor: pointer;
+
+width: 100px;
+margin-left: 50px;
+opacity: 0.8;
+}
+/* Hover effects for buttons */
+.form-container .btn:hover, .open-button:hover {
+opacity: 1;
+}
+
+
+.form input{
+    padding: 10px 30px 10px 5px;
+    border-radius: 4px;
+    border: 1px solid gray;
+    margin:5px;
+}
+
+#uname, #email{
+    width: 300px;
+    margin-right: 10px;
+
+}
+
+
+#subject{
+    width: 660px;
+}
+
+#msg{
+    height: 60px;
+    width: 660px;
+}
+
+/* Add Zoom Animation */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+  }
+  
+  @-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+  }
+    
+  @keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+  }
+  
+  .example{
+	background-image: url('./bkg.jpg');
+	background-position:center;
+	background-repeat:no-repeat;
+	background-size:cover;
+	height:300px;
+	width:90%;
+}
+
+.dashboard {  
+    float: left; 
+    box-shadow: 3px 4px #000203; 
+    border: 1px solid rgb(73, 72, 6)45e4; 
+    margin-right: 15%;
+    background-color: rgb(0, 112, 235);
+    border-color: rgb(0, 112, 235);
+    color: rgb(255, 255, 255);
+}
+
+.dashboard a {
+    text-decoration: none;
+}
+
+.c-button {
+    font-family: mountain;
+    font-weight: 400;
+    font-size: 15.4px;
+    line-height: 1.54;
+    padding: 12px 16px;
+    text-align: center;
+    white-space: nowrap;
+    border: 2px solid transparent;
+    background: 0 0;
+    cursor: pointer;
+    color: inherit;
+    display: block;
+}
+
+.c-banner-buttons {
+    display: flex;
+}
+
+.app-space {
+    height: 60vh;
+    width: 80%;
+    background-color: white;
+    margin-top: 5%;
+    margin-left: 9%;
+}
+
+.offerinput{
+    padding: 5px 18px 5px 5px;
+    border: 1px solid #EEEEEE;
+    border-radius: 4px;
+
+}
+
+
+  
+.btn{
+    padding: 5px 18px;
+    border: 1px solid green;
+    color: white;
+    border-radius: 4px;
+    background: green;
+}
+
+.separator {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+.separator::before, .separator::after {
+    content: '';
+    flex: 1;
+    border-bottom: 1px solid #eeee;
+}
+.separator::before {
+    margin-right: .25em;
+}
+.separator::after {
+    margin-left: .25em;
+}
+#mobilenav{
+    display: none;
+}
+#desktopnav{
+    display: block;
+}
+
+
+
+
+@media screen and (max-width: 715px) {
+
+    #mobilenav{
+        display: block;
+        font-size: 60%;
+        text-align: left;
+        height: 50px;
+        width: 100%;
+    }
+
+    #desktopnav{
+        display: none;
+    }
+
+    .container1 {
+        height: 10vh;
+        margin-bottom: -30px;
+        width: 100%;
+    }
+  
+    .container2 {
+        height: 10vh !important; 
+        margin-top: 20px;
+        align-content: center; 
+        align-items: center;  
+        text-align: center;
+        justify-content: center;
+        margin-bottom: 30px;
+        width: 100%;
+    }
+    .container2 h1{
+        font-size: 15px;
+    }
+
+    #table {
+        width: 100%;
+        margin-right: 250px;
+        display: block;
+    }
+
+    .container2 h2 {
+        font-size: 15px ;
+    }
+
+    .container2 p {
+        font-size: 9px !important;
+        text-align: center;
+    }
+
+    .container2 img {
+        width: 25px;
+        height: 25px;
+    }
+
+    .buttonitems {
+        font-size: 10px;
+    }
+
+    #Nuestromenu {
+        margin-top: 450px !important;
+        margin-right: 250px !important;
+    }
+
+    .container3 {
+        margin-top: 450px !important;
+    }
+
+    #icon img {
+        width: 20px !important;
+        height: 20px !important;
+    }
+
+    #con2_sobre {
+        margin-top: 200px !important;
+        margin-top: 10px !important;
+    }
+
+    #con2_sobre h1 {
+        font-size: 15px !important;
+    }
+
+    #sobre_con3 {
+        margin-top: -30px !important;
+    }
+
+    #sobre_con3 img {
+        margin-top: 10px;
+        width: 130px;
+        height: 130px;
+    }
+
+    .container4 {
+        margin-top: -350px !important;
+    }
+
+    .wrapper h2 {
+        font-size: 20px;
+    }
+
+    #sobre_text_height {
+        height: 1vh !important;
+        margin-top: 30%;
+    }
+
+    #footer_sobre {
+        margin-top: 60px !important;
+    }
+
+    #footerimg {
+        margin-top: 45px !important;
+        width: 60px;
+        height: 60px;
+    }
+
+    #tabledis {
+        display: none;
+    }
+
+    #tablemen1 {
+        display: none;
+    }
+
+    #tablemen2 {
+        display: none;
+    }
+
+    #menunav {
+        padding-left: 10px !important;
+    }
+    #subject{
+        width: 300px;
+        }
+    #msg {
+        width: 300px;
+    }
+
+    #cont_img {
+        margin-top: 20px;
+    }
+    #phonetable {
+        display: grid;
+        margin-right: 8%;
+        margin-bottom: -15%;
+    }
+    
+}
